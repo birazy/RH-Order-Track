@@ -1,0 +1,737 @@
+/**
+ * RH Order Track — front-end styles.
+ *
+ * Specificity ladder used throughout:
+ *   .rhot-track  ....... tokens and layout containers, (0,1,0)
+ *   .rhot-scope X ...... normal rules, (0,2,0) — beats `.entry-content ul`,
+ *                        `.woocommerce input`, and bare-tag theme rules
+ *   .rhot-scope.rhot-scope X  ... (0,3,0), used ONLY for the handful of
+ *                        properties themes habitually force on buttons and
+ *                        inputs. Repeating a class on the same element costs
+ *                        nothing and is far more surgical than !important.
+ *
+ * The `!important` hardening block at the very bottom is inert unless the
+ * admin turns on "Force plugin styles".
+ */
+
+/* -------------------------------------------------------------------------
+ * Tokens — literal fallbacks only.
+ *
+ * The real chain (Elementor globals -> theme.json presets -> these values) is
+ * printed inline after this file by RHOT_Styles, so it overrides this block.
+ * These exist so the plugin still renders correctly if the inline style is
+ * ever stripped by an optimisation plugin.
+ * ---------------------------------------------------------------------- */
+.rhot-track {
+	--rhot-primary: #2563eb;
+	--rhot-on-primary: #ffffff;
+	--rhot-text: #1f2937;
+	--rhot-muted: #6b7280;
+	--rhot-surface: #ffffff;
+	--rhot-border: #e5e7eb;
+	--rhot-success: #15803d;
+	--rhot-danger: #b91c1c;
+	--rhot-radius: 10px;
+}
+
+/* -------------------------------------------------------------------------
+ * Root / isolation
+ * ---------------------------------------------------------------------- */
+.rhot-track {
+	box-sizing: border-box;
+	/* Typography is inherited on purpose: the widget should read as part of
+	   the page, not as a transplanted island. */
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--rhot-text);
+	/* New stacking context so a theme's z-index cannot punch through the
+	   result panel, and vice versa. */
+	isolation: isolate;
+	text-align: left;
+}
+
+.rhot-track *,
+.rhot-track *::before,
+.rhot-track *::after {
+	box-sizing: inherit;
+}
+
+/* -------------------------------------------------------------------------
+ * Header
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-head {
+	margin: 0 0 16px;
+}
+
+.rhot-scope .rhot-title {
+	margin: 0 0 4px;
+	font-size: 1.35em;
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-subtitle {
+	margin: 0;
+	font-size: 0.95em;
+	color: var(--rhot-muted);
+}
+
+/* -------------------------------------------------------------------------
+ * Form
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+}
+
+.rhot-scope .rhot-fields {
+	display: grid;
+	gap: 14px;
+	grid-template-columns: 1fr;
+	align-items: end;
+}
+
+.rhot-layout--inline .rhot-fields {
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.rhot-scope .rhot-field {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin: 0;
+	min-width: 0;
+}
+
+.rhot-scope .rhot-label {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 0.9em;
+	font-weight: 600;
+	line-height: 1.4;
+	color: var(--rhot-text);
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+.rhot-scope .rhot-required {
+	color: var(--rhot-danger);
+}
+
+.rhot-scope .rhot-input {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 11px 14px;
+	font-family: inherit;
+	font-size: 1em;
+	line-height: 1.4;
+	color: var(--rhot-text);
+	background-color: var(--rhot-surface);
+	background-image: none;
+	border: 1px solid var(--rhot-border);
+	border-radius: var(--rhot-radius);
+	box-shadow: none;
+	outline: none;
+	-webkit-appearance: none;
+	appearance: none;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.rhot-scope .rhot-input::placeholder {
+	color: var(--rhot-muted);
+	opacity: 1;
+}
+
+.rhot-scope .rhot-input:focus,
+.rhot-scope .rhot-input:focus-visible {
+	border-color: var(--rhot-primary);
+	/* Literal fallback first for browsers without color-mix. */
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--rhot-primary) 22%, transparent);
+	outline: none;
+}
+
+.rhot-scope .rhot-input[aria-invalid="true"] {
+	border-color: var(--rhot-danger);
+}
+
+/* -------------------------------------------------------------------------
+ * Button
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100%;
+	min-height: 46px;
+	margin: 0;
+	padding: 11px 22px;
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1.4;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	letter-spacing: normal;
+	color: var(--rhot-on-primary);
+	background-color: var(--rhot-primary);
+	background-image: none;
+	border: 0;
+	border-radius: var(--rhot-radius);
+	box-shadow: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	transition: filter 0.15s ease, opacity 0.15s ease;
+}
+
+.rhot-layout--inline .rhot-btn {
+	width: auto;
+}
+
+.rhot-scope.rhot-scope .rhot-btn:hover,
+.rhot-scope.rhot-scope .rhot-btn:focus {
+	color: var(--rhot-on-primary);
+	background-color: var(--rhot-primary);
+	filter: brightness(0.93);
+	text-decoration: none;
+}
+
+.rhot-scope .rhot-btn:focus-visible {
+	outline: 2px solid var(--rhot-primary);
+	outline-offset: 2px;
+}
+
+.rhot-scope .rhot-btn[disabled],
+.rhot-scope .rhot-btn.is-loading {
+	opacity: 0.72;
+	cursor: default;
+}
+
+.rhot-scope .rhot-spinner {
+	display: none;
+	width: 15px;
+	height: 15px;
+	border: 2px solid currentColor;
+	border-right-color: transparent;
+	border-radius: 50%;
+	animation: rhot-spin 0.7s linear infinite;
+}
+
+.rhot-scope .rhot-btn.is-loading .rhot-spinner {
+	display: inline-block;
+}
+
+@keyframes rhot-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.rhot-scope .rhot-spinner {
+		animation-duration: 2s;
+	}
+
+	.rhot-scope .rhot-input,
+	.rhot-scope .rhot-btn {
+		transition: none;
+	}
+}
+
+/* -------------------------------------------------------------------------
+ * Result area
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-result {
+	margin: 0;
+}
+
+.rhot-scope .rhot-result:not(:empty) {
+	margin-top: 20px;
+}
+
+.rhot-scope .rhot-results__count {
+	margin: 0 0 12px;
+	font-size: 0.9em;
+	color: var(--rhot-muted);
+}
+
+.rhot-scope .rhot-message {
+	display: flex;
+	gap: 10px;
+	margin: 0;
+	padding: 14px 16px;
+	font-size: 0.95em;
+	border: 1px solid var(--rhot-border);
+	border-left-width: 4px;
+	border-radius: var(--rhot-radius);
+	background-color: var(--rhot-surface);
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-message--error {
+	border-left-color: var(--rhot-danger);
+}
+
+.rhot-scope .rhot-message--info {
+	border-left-color: var(--rhot-primary);
+}
+
+/* -------------------------------------------------------------------------
+ * Card
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-card {
+	margin: 0 0 16px;
+	padding: 20px;
+	background-color: var(--rhot-surface);
+	border: 1px solid var(--rhot-border);
+	border-radius: var(--rhot-radius);
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-card:last-child {
+	margin-bottom: 0;
+}
+
+.rhot-scope .rhot-card__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	margin: 0 0 16px;
+}
+
+.rhot-scope .rhot-card__number {
+	margin: 0;
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-status {
+	display: inline-block;
+	padding: 5px 12px;
+	font-size: 0.82em;
+	font-weight: 600;
+	line-height: 1.4;
+	white-space: nowrap;
+	border-radius: 999px;
+	/* --rhot-status is emitted per status by RHOT_Styles when the admin sets
+	   a colour; otherwise the primary colour stands in. */
+	color: var(--rhot-status, var(--rhot-primary));
+	background-color: rgba(37, 99, 235, 0.12);
+	background-color: color-mix(in srgb, var(--rhot-status, var(--rhot-primary)) 14%, transparent);
+}
+
+/* -------------------------------------------------------------------------
+ * Timeline
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-timeline {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+	gap: 0;
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	counter-reset: none;
+}
+
+.rhot-scope .rhot-step {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	margin: 0;
+	padding: 0 4px;
+	list-style: none;
+	text-align: center;
+}
+
+/* The connecting rail is drawn on each step except the first, so it never
+   overhangs the ends of the track. */
+.rhot-scope .rhot-step + .rhot-step::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	right: 50%;
+	left: -50%;
+	height: 2px;
+	background-color: var(--rhot-border);
+}
+
+.rhot-scope .rhot-step--done::before,
+.rhot-scope .rhot-step--current::before {
+	background-color: var(--rhot-primary);
+}
+
+.rhot-scope .rhot-step__dot {
+	position: relative;
+	z-index: 1;
+	display: block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid var(--rhot-border);
+	border-radius: 50%;
+	background-color: var(--rhot-surface);
+}
+
+.rhot-scope .rhot-step--done .rhot-step__dot {
+	border-color: var(--rhot-primary);
+	background-color: var(--rhot-primary);
+}
+
+.rhot-scope .rhot-step--current .rhot-step__dot {
+	border-color: var(--rhot-primary);
+	background-color: var(--rhot-surface);
+	box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+	box-shadow: 0 0 0 4px color-mix(in srgb, var(--rhot-primary) 22%, transparent);
+}
+
+.rhot-scope .rhot-step__label {
+	font-size: 0.82em;
+	line-height: 1.35;
+	color: var(--rhot-muted);
+}
+
+.rhot-scope .rhot-step--current .rhot-step__label {
+	font-weight: 600;
+	color: var(--rhot-text);
+}
+
+/* Off-track orders (cancelled, refunded, failed) show the rail greyed out —
+   marking step 1 of 3 as reached would be actively misleading. */
+.rhot-scope .rhot-timeline--off {
+	opacity: 0.55;
+}
+
+/* -------------------------------------------------------------------------
+ * Rows
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-rows {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+.rhot-scope .rhot-rows:last-child {
+	margin-bottom: 0;
+}
+
+.rhot-scope .rhot-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 8px;
+	margin: 0;
+	padding: 8px 0;
+	border-bottom: 1px solid var(--rhot-border);
+}
+
+.rhot-scope .rhot-row:last-child {
+	border-bottom: 0;
+}
+
+.rhot-scope .rhot-row__label {
+	margin: 0;
+	font-size: 0.9em;
+	font-weight: 400;
+	color: var(--rhot-muted);
+}
+
+.rhot-scope .rhot-row__value {
+	margin: 0;
+	font-size: 0.95em;
+	font-weight: 500;
+	text-align: right;
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-row--total .rhot-row__label,
+.rhot-scope .rhot-row--total .rhot-row__value {
+	font-size: 1.05em;
+	font-weight: 700;
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-link {
+	color: var(--rhot-primary);
+	text-decoration: underline;
+}
+
+.rhot-scope.rhot-scope .rhot-link:hover {
+	color: var(--rhot-primary);
+	filter: brightness(0.9);
+}
+
+/* -------------------------------------------------------------------------
+ * Items
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-items {
+	margin: 0 0 16px;
+	padding: 0;
+	list-style: none;
+}
+
+.rhot-scope .rhot-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	margin: 0;
+	padding: 12px 0;
+	list-style: none;
+	border-bottom: 1px solid var(--rhot-border);
+}
+
+.rhot-scope .rhot-item:last-child {
+	border-bottom: 0;
+}
+
+.rhot-scope .rhot-item__thumb {
+	flex: 0 0 56px;
+	width: 56px;
+}
+
+.rhot-scope .rhot-item__thumb img {
+	display: block;
+	width: 56px;
+	height: 56px;
+	margin: 0;
+	object-fit: cover;
+	border-radius: calc(var(--rhot-radius) - 4px);
+	border: 1px solid var(--rhot-border);
+}
+
+.rhot-scope .rhot-item__body {
+	flex: 1 1 auto;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.rhot-scope .rhot-item__name {
+	font-size: 0.95em;
+	font-weight: 500;
+	line-height: 1.4;
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-item__sku,
+.rhot-scope .rhot-item__meta {
+	font-size: 0.82em;
+	color: var(--rhot-muted);
+}
+
+.rhot-scope .rhot-item__meta {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.rhot-scope .rhot-item__meta li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.rhot-scope .rhot-item__meta p {
+	display: inline;
+	margin: 0;
+}
+
+.rhot-scope .rhot-item__figures {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 3px;
+	text-align: right;
+}
+
+.rhot-scope .rhot-item__qty {
+	font-size: 0.85em;
+	color: var(--rhot-muted);
+}
+
+.rhot-scope .rhot-item__price {
+	font-size: 0.95em;
+	font-weight: 600;
+	color: var(--rhot-text);
+}
+
+/* -------------------------------------------------------------------------
+ * Customer / notes
+ * ---------------------------------------------------------------------- */
+.rhot-scope .rhot-addresses {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	margin: 0 0 16px;
+}
+
+.rhot-scope .rhot-address__title {
+	margin: 0 0 4px;
+	font-size: 0.85em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	color: var(--rhot-muted);
+}
+
+.rhot-scope .rhot-address address {
+	margin: 0;
+	font-size: 0.92em;
+	font-style: normal;
+	line-height: 1.55;
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-note {
+	margin: 0;
+	font-size: 0.92em;
+	color: var(--rhot-text);
+}
+
+.rhot-scope .rhot-notes {
+	margin: 16px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.rhot-scope .rhot-notes__item {
+	margin: 0 0 10px;
+	padding: 12px 14px;
+	list-style: none;
+	font-size: 0.92em;
+	border-radius: calc(var(--rhot-radius) - 2px);
+	background-color: rgba(0, 0, 0, 0.03);
+	background-color: color-mix(in srgb, var(--rhot-text) 4%, transparent);
+}
+
+.rhot-scope .rhot-notes__date {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 0.85em;
+	color: var(--rhot-muted);
+}
+
+.rhot-scope .rhot-notes__body p {
+	margin: 0 0 6px;
+}
+
+.rhot-scope .rhot-notes__body p:last-child {
+	margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------------------
+ * Small screens
+ * ---------------------------------------------------------------------- */
+@media (max-width: 480px) {
+	.rhot-layout--inline .rhot-fields {
+		grid-template-columns: 1fr;
+	}
+
+	.rhot-layout--inline .rhot-btn {
+		width: 100%;
+	}
+
+	.rhot-scope .rhot-card {
+		padding: 16px;
+	}
+
+	/* The stepper becomes vertical rather than squeezing four labels into
+	   375px, where they would wrap into unreadable slivers. */
+	.rhot-scope .rhot-timeline {
+		grid-auto-flow: row;
+		grid-auto-columns: auto;
+		gap: 14px;
+	}
+
+	.rhot-scope .rhot-step {
+		flex-direction: row;
+		align-items: center;
+		gap: 12px;
+		padding: 0;
+		text-align: left;
+	}
+
+	.rhot-scope .rhot-step + .rhot-step::before {
+		top: -14px;
+		right: auto;
+		left: 7px;
+		width: 2px;
+		height: 14px;
+	}
+
+	.rhot-scope .rhot-item__thumb,
+	.rhot-scope .rhot-item__thumb img {
+		flex-basis: 44px;
+		width: 44px;
+	}
+
+	.rhot-scope .rhot-item__thumb img {
+		height: 44px;
+	}
+}
+
+/* =========================================================================
+ * Hardening block — only active when "Force plugin styles" is enabled.
+ *
+ * Every declaration still resolves through the same custom properties, so
+ * turning this on does NOT discard the theme/Elementor colour inheritance or
+ * the per-widget overrides. It forces only the APPLICATION, never the value.
+ * ====================================================================== */
+.rhot-track.rhot-force .rhot-input {
+	color: var(--rhot-text) !important;
+	background-color: var(--rhot-surface) !important;
+	background-image: none !important;
+	border: 1px solid var(--rhot-border) !important;
+	border-radius: var(--rhot-radius) !important;
+	box-shadow: none !important;
+	height: auto !important;
+	min-height: 0 !important;
+	padding: 11px 14px !important;
+	font-size: 1em !important;
+	text-transform: none !important;
+}
+
+.rhot-track.rhot-force .rhot-btn {
+	color: var(--rhot-on-primary) !important;
+	background-color: var(--rhot-primary) !important;
+	background-image: none !important;
+	border: 0 !important;
+	border-radius: var(--rhot-radius) !important;
+	box-shadow: none !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	font-size: 1em !important;
+}
+
+.rhot-track.rhot-force .rhot-card,
+.rhot-track.rhot-force .rhot-message {
+	color: var(--rhot-text) !important;
+	background-color: var(--rhot-surface) !important;
+	border-color: var(--rhot-border) !important;
+	border-radius: var(--rhot-radius) !important;
+}
+
+.rhot-track.rhot-force .rhot-items,
+.rhot-track.rhot-force .rhot-item,
+.rhot-track.rhot-force .rhot-timeline,
+.rhot-track.rhot-force .rhot-step {
+	list-style: none !important;
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}

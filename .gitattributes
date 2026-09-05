@@ -1,0 +1,15 @@
+# Normalise line endings in the repository to LF, whatever the checkout OS.
+* text=auto eol=lf
+
+# Compiled translations are binary. Without this, EOL normalisation would
+# rewrite bytes inside the .mo and corrupt the catalogue.
+*.mo binary
+
+# Images and archives.
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
+
+# Report .po files as Gettext rather than skewing the language stats.
+*.po linguist-language=Gettext

@@ -1,0 +1,900 @@
+# Bengali translation for RH Order Track.
+# Copyright (C) 2026 Rubel Hossain
+# This file is distributed under the same license as the plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: RH Order Track 1.0.0\n"
+"Report-Msgid-Bugs-To: https://rubelhossain.online\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bn_BD\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: rh-order-track build script\n"
+
+#: includes/class-rhot-admin.php:222
+msgid "\"Not found\" message"
+msgstr "\"পাওয়া যায়নি\" বার্তা"
+
+#: includes/class-rhot-tools.php:304
+msgid "%1$s of %2$s orders indexed."
+msgstr "%2$s টির মধ্যে %1$s টি অর্ডার ইনডেক্স করা হয়েছে।"
+
+#: templates/result.php:25
+msgid "%s recent order found."
+msgid_plural "%s recent orders found."
+msgstr[0] "%s টি সাম্প্রতিক অর্ডার পাওয়া গেছে।"
+msgstr[1] "%s টি সাম্প্রতিক অর্ডার পাওয়া গেছে।"
+
+#: includes/class-rhot-admin.php:199
+msgid "A field required by the mode above is always shown, whatever these switches say."
+msgstr "উপরের মোড অনুযায়ী যে ফিল্ড বাধ্যতামূলক, সেটি এই সুইচ যাই বলুক — সবসময় দেখাবে।"
+
+#: includes/class-rhot-tools.php:252
+msgid "Accepts"
+msgstr "যা নেয়"
+
+#: includes/class-rhot-admin.php:429
+msgid "Add row"
+msgstr "রো যোগ করুন"
+
+#: includes/class-rhot-tools.php:260 includes/class-rhot-tools.php:261 includes/class-rhot-tools.php:262 includes/class-rhot-tools.php:263 includes/class-rhot-tools.php:264 includes/class-rhot-tools.php:265 includes/class-rhot-tools.php:266
+msgid "Any text"
+msgstr "যেকোনো লেখা"
+
+#: includes/class-rhot-tools.php:246
+msgid "Anything you leave out simply follows the settings on the other tabs."
+msgstr "যা উল্লেখ করবেন না, সেটি অন্য ট্যাবের সেটিংস অনুসরণ করবে।"
+
+#: includes/class-rhot-admin.php:225
+msgid "Attempts allowed"
+msgstr "সর্বোচ্চ চেষ্টা"
+
+#: includes/class-rhot-tools.php:251
+msgid "Attribute"
+msgstr "অ্যাট্রিবিউট"
+
+#: includes/class-rhot-admin.php:218
+msgid "Behaviour and limits"
+msgstr "আচরণ ও সীমা"
+
+#: includes/class-rhot-admin.php:352 templates/order-card.php:162
+msgid "Billing address"
+msgstr "বিলিং ঠিকানা"
+
+#: includes/class-rhot-admin.php:517 widgets/class-rhot-track-widget.php:201
+msgid "Borders"
+msgstr "বর্ডার"
+
+#: includes/class-rhot-admin.php:193 includes/class-rhot-admin.php:513 widgets/class-rhot-track-widget.php:122 widgets/class-rhot-track-widget.php:197
+msgid "Button text"
+msgstr "বাটনের লেখা"
+
+#: includes/class-rhot-admin.php:516 widgets/class-rhot-track-widget.php:200
+msgid "Card background"
+msgstr "কার্ডের ব্যাকগ্রাউন্ড"
+
+#: templates/preview.php:45
+msgid "Cash on delivery"
+msgstr "ক্যাশ অন ডেলিভারি"
+
+#: includes/class-rhot-assets.php:70
+msgid "Checking…"
+msgstr "দেখা হচ্ছে…"
+
+#: includes/class-rhot-admin.php:255
+msgid "Colour"
+msgstr "রঙ"
+
+#: includes/class-rhot-admin.php:498 widgets/class-rhot-track-widget.php:181
+msgid "Colours"
+msgstr "রঙ"
+
+#: templates/preview.php:34
+msgid "Completed"
+msgstr "সম্পন্ন"
+
+#: widgets/class-rhot-track-widget.php:66
+msgid "Content"
+msgstr "কনটেন্ট"
+
+#: includes/class-rhot-tools.php:382
+msgid "Copy this to move your configuration to another site."
+msgstr "অন্য সাইটে আপনার সেটিংস নিতে এটি কপি করুন।"
+
+#: includes/class-rhot-admin.php:530 widgets/class-rhot-track-widget.php:231
+msgid "Corner radius"
+msgstr "কোণের বাঁক"
+
+#: includes/class-rhot-admin.php:95
+msgid "Courier & custom rows"
+msgstr "কুরিয়ার ও কাস্টম রো"
+
+#: includes/class-rhot-admin.php:642
+msgid "Currently inheriting %1$s from %2$s"
+msgstr "এখন %2$s থেকে %1$s নেওয়া হচ্ছে"
+
+#: includes/class-rhot-admin.php:254
+msgid "Custom label"
+msgstr "নিজের লেখা লেবেল"
+
+#: includes/class-rhot-admin.php:348
+msgid "Customer"
+msgstr "কাস্টমার"
+
+#: includes/class-rhot-admin.php:354
+msgid "Customer note"
+msgstr "কাস্টমারের নোট"
+
+#: includes/class-rhot-admin.php:96
+msgid "Design"
+msgstr "ডিজাইন"
+
+#: includes/class-rhot-admin.php:400
+msgid "Detected on this site:"
+msgstr "এই সাইটে পাওয়া গেছে:"
+
+#: includes/class-rhot-admin.php:343 includes/class-rhot-formatter.php:235
+msgid "Discount"
+msgstr "ছাড়"
+
+#: includes/class-rhot-tools.php:336
+msgid "Elementor"
+msgstr "Elementor"
+
+#: includes/class-rhot-styles.php:244
+msgid "Elementor global colour"
+msgstr "Elementor গ্লোবাল কালার"
+
+#: templates/order-card.php:151
+msgid "Email"
+msgstr "ইমেইল"
+
+#: includes/class-rhot-admin.php:213 includes/class-rhot-admin.php:351 includes/class-rhot-shortcode.php:169
+msgid "Email address"
+msgstr "ইমেইল ঠিকানা"
+
+#: includes/class-rhot-admin.php:212
+msgid "Email field"
+msgstr "ইমেইল ফিল্ড"
+
+#: includes/class-rhot-admin.php:213
+msgid "Email label"
+msgstr "ইমেইলের লেবেল"
+
+#: includes/class-rhot-admin.php:214
+msgid "Email placeholder"
+msgstr "ইমেইলের প্লেসহোল্ডার"
+
+#: includes/class-rhot-admin.php:519 widgets/class-rhot-track-widget.php:202
+msgid "Error"
+msgstr "ত্রুটি"
+
+#: includes/class-rhot-tools.php:282
+msgid "Example:"
+msgstr "উদাহরণ:"
+
+#: includes/class-rhot-tools.php:381
+msgid "Export"
+msgstr "এক্সপোর্ট"
+
+#: includes/class-rhot-tools.php:379
+msgid "Export, import and reset"
+msgstr "এক্সপোর্ট, ইমপোর্ট ও রিসেট"
+
+#: includes/class-rhot-tools.php:268
+msgid "Extra CSS class"
+msgstr "বাড়তি CSS ক্লাস"
+
+#: includes/class-rhot-admin.php:231
+msgid "Fallback searches"
+msgstr "বিকল্প অনুসন্ধান"
+
+#: widgets/class-rhot-track-widget.php:132
+msgid "Field labels"
+msgstr "ফিল্ডের লেবেল"
+
+#: widgets/class-rhot-track-widget.php:249
+msgid "Field spacing"
+msgstr "ফিল্ডের ফাঁক"
+
+#: includes/class-rhot-admin.php:197
+msgid "Fields"
+msgstr "ফিল্ড"
+
+#: includes/class-rhot-admin.php:228
+msgid "Fill in and submit the form automatically from ?rhot_order=…&rhot_phone=…"
+msgstr "?rhot_order=…&rhot_phone=… থেকে ফর্ম নিজে থেকে পূরণ ও সাবমিট হবে"
+
+#: includes/class-rhot-admin.php:81
+msgid "Finished."
+msgstr "সম্পন্ন।"
+
+#: includes/class-rhot-admin.php:534
+msgid "Force plugin styles"
+msgstr "প্লাগিনের স্টাইল জোর করে প্রয়োগ করো"
+
+#: includes/class-rhot-admin.php:183 widgets/class-rhot-track-widget.php:108
+msgid "Form layout"
+msgstr "ফর্মের লেআউট"
+
+#: includes/class-rhot-admin.php:92
+msgid "General"
+msgstr "সাধারণ"
+
+#: includes/class-rhot-admin.php:191 widgets/class-rhot-track-widget.php:72
+msgid "Heading"
+msgstr "হেডিং"
+
+#: includes/class-rhot-admin.php:302
+msgid "Hidden statuses"
+msgstr "লুকানো স্ট্যাটাস"
+
+#: includes/class-rhot-admin.php:379
+msgid "Hide most of the phone number and email (0171*****78)"
+msgstr "ফোন নম্বর ও ইমেইলের বেশিরভাগ অংশ লুকিয়ে রাখো (০১৭১*****৭৮)"
+
+#: includes/class-rhot-tools.php:334
+msgid "High-Performance Order Storage (HPOS)"
+msgstr "হাই-পারফরম্যান্স অর্ডার স্টোরেজ (HPOS)"
+
+#: includes/class-rhot-admin.php:231
+msgid "If the index finds nothing, also try WooCommerce's own phone field"
+msgstr "ইনডেক্সে না পাওয়া গেলে WooCommerce-এর নিজস্ব ফোন ফিল্ডেও খোঁজো"
+
+#: includes/class-rhot-tools.php:385
+msgid "Import"
+msgstr "ইমপোর্ট"
+
+#: includes/class-rhot-tools.php:390
+msgid "Import settings"
+msgstr "সেটিংস ইমপোর্ট করুন"
+
+#: includes/class-rhot-admin.php:440
+msgid "In the link URL, {value} is replaced by the meta value — for example https://steadfast.com.bd/t/{value}"
+msgstr "লিংক URL-এ {value} এর জায়গায় মেটার মান বসবে — যেমন https://steadfast.com.bd/t/{value}"
+
+#: includes/class-rhot-admin.php:500
+msgid "Inherit from the theme (recommended)"
+msgstr "থিম থেকে নাও (সুপারিশকৃত)"
+
+#: widgets/class-rhot-track-widget.php:114
+msgid "Inline"
+msgstr "পাশাপাশি"
+
+#: includes/class-rhot-admin.php:186
+msgid "Inline (fields side by side)"
+msgstr "পাশাপাশি (ফিল্ডগুলো একসাথে)"
+
+#: templates/form.php:75
+msgid "JavaScript needs to be enabled to track an order."
+msgstr "অর্ডার ট্র্যাক করতে জাভাস্ক্রিপ্ট চালু থাকতে হবে।"
+
+#: includes/class-rhot-admin.php:230
+msgid "Keep a normalised copy of each order's phone number for fast lookups"
+msgstr "দ্রুত খোঁজার জন্য প্রতিটি অর্ডারের ফোন নম্বরের একটি সাজানো কপি রাখো"
+
+#: includes/class-rhot-admin.php:415
+msgid "Label shown to the customer"
+msgstr "কাস্টমার যে লেবেল দেখবে"
+
+#: widgets/class-rhot-track-widget.php:190
+msgid "Leave a colour empty to inherit it from your theme or Elementor global colours."
+msgstr "কোনো রঙ খালি রাখলে সেটি আপনার থিম বা Elementor গ্লোবাল কালার থেকে আসবে।"
+
+#: includes/class-rhot-admin.php:192
+msgid "Leave empty to hide"
+msgstr "খালি রাখলে দেখাবে না"
+
+#: widgets/class-rhot-track-widget.php:75 widgets/class-rhot-track-widget.php:85 widgets/class-rhot-track-widget.php:125
+msgid "Leave empty to use the global setting"
+msgstr "খালি রাখলে গ্লোবাল সেটিংস কাজ করবে"
+
+#: includes/class-rhot-tools.php:335
+msgid "Legacy post storage"
+msgstr "পুরনো পোস্ট স্টোরেজ"
+
+#: includes/class-rhot-admin.php:231
+msgid "Lets phone lookups work on old orders before the index has been rebuilt."
+msgstr "ইনডেক্স তৈরির আগেও পুরনো অর্ডারে ফোন দিয়ে খোঁজা কাজ করবে।"
+
+#: includes/class-rhot-admin.php:337
+msgid "Line price"
+msgstr "দাম"
+
+#: includes/class-rhot-admin.php:417
+msgid "Link URL (optional)"
+msgstr "লিংক URL (ঐচ্ছিক)"
+
+#: includes/class-rhot-admin.php:544
+msgid "Load rhot-track.css on the front end"
+msgstr "ফ্রন্টএন্ডে rhot-track.css লোড করো"
+
+#: includes/class-rhot-admin.php:542
+msgid "Load the plugin stylesheet"
+msgstr "প্লাগিনের স্টাইলশিট লোড করো"
+
+#: includes/class-rhot-admin.php:377
+msgid "Mask contact details"
+msgstr "যোগাযোগের তথ্য ঢেকে রাখো"
+
+#: includes/class-rhot-admin.php:224
+msgid "Maximum orders shown"
+msgstr "সর্বোচ্চ কতগুলো অর্ডার দেখাবে"
+
+#: includes/class-rhot-admin.php:515 widgets/class-rhot-track-widget.php:199
+msgid "Muted text"
+msgstr "হালকা লেখা"
+
+#: includes/class-rhot-admin.php:349 templates/order-card.php:137
+msgid "Name"
+msgstr "নাম"
+
+#: includes/class-rhot-admin.php:316
+msgid "Neutral message"
+msgstr "সাধারণ বার্তা"
+
+#: includes/class-rhot-tools.php:296
+msgid "New orders are indexed automatically. Run this once to index the orders that already existed before the plugin was installed."
+msgstr "নতুন অর্ডার নিজে থেকেই ইনডেক্স হয়। প্লাগিন ইনস্টলের আগের অর্ডারগুলোর জন্য এটি একবার চালান।"
+
+#: includes/class-rhot-tools.php:367
+msgid "None — using the plugin templates"
+msgstr "কিছু নেই — প্লাগিনের টেমপ্লেট ব্যবহার হচ্ছে"
+
+#: includes/class-rhot-tools.php:336
+msgid "Not active — the shortcode still works"
+msgstr "চালু নেই — শর্টকোড তবুও কাজ করবে"
+
+#: includes/class-rhot-tools.php:332
+msgid "Not detected"
+msgstr "পাওয়া যায়নি"
+
+#: includes/class-rhot-admin.php:355
+msgid "Notes sent to the customer"
+msgstr "কাস্টমারকে পাঠানো নোট"
+
+#: includes/class-rhot-admin.php:504
+msgid "On \"inherit\", the form picks up your Elementor global colours or theme palette automatically. Switch to \"my own colours\" and the plugin's colours take priority over the theme."
+msgstr "\"থিম থেকে নাও\" দিলে ফর্মটি আপনার Elementor গ্লোবাল কালার বা থিমের প্যালেট নিজে থেকেই নেবে। \"নিজের রঙ\" দিলে প্লাগিনের রঙই থিমের উপরে প্রাধান্য পাবে।"
+
+#: includes/class-rhot-admin.php:252
+msgid "On timeline"
+msgstr "টাইমলাইনে"
+
+#: includes/class-rhot-admin.php:537
+msgid "Only needed if your theme is still restyling the form. Colours still come from the settings above."
+msgstr "থিম যদি এখনও ফর্মের চেহারা বদলে দেয় তবেই দরকার। রঙ তবুও উপরের সেটিংস থেকেই আসবে।"
+
+#: includes/class-rhot-admin.php:224
+msgid "Only relevant when a phone number can match several orders."
+msgstr "একটি ফোন নম্বরে একাধিক অর্ডার মিললে এটি কাজে লাগে।"
+
+#: includes/class-rhot-admin.php:244
+msgid "Only the statuses you tick are ever shown to a customer. Statuses added by other plugins appear here automatically."
+msgstr "আপনি যেগুলো টিক দেবেন শুধু সেগুলোই কাস্টমার দেখবে। অন্য প্লাগিনের যোগ করা স্ট্যাটাসও এখানে নিজে থেকেই আসবে।"
+
+#: includes/class-rhot-admin.php:360
+msgid "Only what you tick here is sent to the browser — anything unticked never leaves the server."
+msgstr "এখানে যা টিক দেবেন শুধু সেটাই ব্রাউজারে যাবে — টিক না দেওয়া কিছুই সার্ভার থেকে বের হবে না।"
+
+#: includes/class-rhot-admin.php:214 includes/class-rhot-shortcode.php:170
+msgid "Optional"
+msgstr "ঐচ্ছিক"
+
+#: includes/class-rhot-tools.php:245
+msgid "Optional attributes"
+msgstr "ঐচ্ছিক অ্যাট্রিবিউট"
+
+#: templates/order-card.php:30
+msgid "Order #%s"
+msgstr "অর্ডার #%s"
+
+#: templates/preview.php:19
+msgid "Order #1042"
+msgstr "অর্ডার #১০৪২"
+
+#: widgets/class-rhot-track-widget.php:30
+msgid "Order Tracking"
+msgstr "অর্ডার ট্র্যাকিং"
+
+#: includes/class-rhot-admin.php:329 includes/class-rhot-formatter.php:127 templates/preview.php:40
+msgid "Order date"
+msgstr "অর্ডারের তারিখ"
+
+#: includes/class-rhot-admin.php:94
+msgid "Order details"
+msgstr "অর্ডার ডিটেইলস"
+
+#: includes/class-rhot-admin.php:416
+msgid "Order meta key"
+msgstr "অর্ডার মেটা কী"
+
+#: includes/class-rhot-admin.php:205 includes/class-rhot-admin.php:328 includes/class-rhot-shortcode.php:145
+msgid "Order number"
+msgstr "অর্ডার নম্বর"
+
+#: includes/class-rhot-admin.php:172
+msgid "Order number AND phone number (most secure)"
+msgstr "অর্ডার নম্বর এবং ফোন নম্বর (সবচেয়ে নিরাপদ)"
+
+#: includes/class-rhot-admin.php:173
+msgid "Order number OR phone number"
+msgstr "অর্ডার নম্বর অথবা ফোন নম্বর"
+
+#: widgets/class-rhot-track-widget.php:97
+msgid "Order number and phone (most secure)"
+msgstr "অর্ডার নম্বর ও ফোন (সবচেয়ে নিরাপদ)"
+
+#: includes/class-rhot-admin.php:204
+msgid "Order number field"
+msgstr "অর্ডার নম্বর ফিল্ড"
+
+#: includes/class-rhot-admin.php:205 widgets/class-rhot-track-widget.php:141
+msgid "Order number label"
+msgstr "অর্ডার নম্বরের লেবেল"
+
+#: includes/class-rhot-admin.php:174 widgets/class-rhot-track-widget.php:99
+msgid "Order number only"
+msgstr "শুধু অর্ডার নম্বর"
+
+#: widgets/class-rhot-track-widget.php:98
+msgid "Order number or phone"
+msgstr "অর্ডার নম্বর অথবা ফোন"
+
+#: includes/class-rhot-admin.php:206 widgets/class-rhot-track-widget.php:150
+msgid "Order number placeholder"
+msgstr "অর্ডার নম্বরের প্লেসহোল্ডার"
+
+#: includes/class-rhot-tools.php:333
+msgid "Order storage"
+msgstr "অর্ডার স্টোরেজ"
+
+#: includes/class-rhot-admin.php:346
+msgid "Order total"
+msgstr "অর্ডারের সর্বমোট"
+
+#: includes/class-rhot-ajax.php:61 includes/class-rhot-lookup.php:29
+msgid "Order tracking is temporarily unavailable. Please try again shortly."
+msgstr "অর্ডার ট্র্যাকিং এই মুহূর্তে কাজ করছে না। একটু পরে আবার চেষ্টা করুন।"
+
+#: includes/class-rhot-admin.php:536
+msgid "Override stubborn theme styles on buttons and inputs"
+msgstr "বাটন ও ইনপুটে থিমের জেদি স্টাইল ছাপিয়ে যাও"
+
+#: includes/class-rhot-admin.php:330 includes/class-rhot-formatter.php:139 templates/preview.php:44
+msgid "Payment method"
+msgstr "পেমেন্ট মেথড"
+
+#: templates/preview.php:26
+msgid "Pending payment"
+msgstr "পেমেন্ট বাকি"
+
+#: includes/class-rhot-admin.php:225
+msgid "Per visitor IP, within the window below."
+msgstr "প্রতি ভিজিটর আইপি অনুযায়ী, নিচের সময়সীমার মধ্যে।"
+
+#: templates/order-card.php:144
+msgid "Phone"
+msgstr "ফোন"
+
+#: includes/class-rhot-admin.php:208
+msgid "Phone field"
+msgstr "ফোন ফিল্ড"
+
+#: includes/class-rhot-admin.php:230
+msgid "Phone index"
+msgstr "ফোন ইনডেক্স"
+
+#: includes/class-rhot-admin.php:209 widgets/class-rhot-track-widget.php:159
+msgid "Phone label"
+msgstr "ফোনের লেবেল"
+
+#: includes/class-rhot-admin.php:209 includes/class-rhot-admin.php:350 includes/class-rhot-shortcode.php:157
+msgid "Phone number"
+msgstr "ফোন নম্বর"
+
+#: includes/class-rhot-admin.php:175
+msgid "Phone number only"
+msgstr "শুধু ফোন নম্বর"
+
+#: widgets/class-rhot-track-widget.php:100
+msgid "Phone only"
+msgstr "শুধু ফোন"
+
+#: includes/class-rhot-admin.php:210 widgets/class-rhot-track-widget.php:168
+msgid "Phone placeholder"
+msgstr "ফোনের প্লেসহোল্ডার"
+
+#: includes/class-rhot-lookup.php:86
+msgid "Please enter both your order number and the phone number you ordered with."
+msgstr "অর্ডার নম্বর এবং যে ফোন নম্বর দিয়ে অর্ডার করেছেন — দুটোই দিন।"
+
+#: includes/class-rhot-lookup.php:94
+msgid "Please enter the phone number you ordered with."
+msgstr "যে ফোন নম্বর দিয়ে অর্ডার করেছেন সেটি দিন।"
+
+#: includes/class-rhot-lookup.php:98
+msgid "Please enter your order number or the phone number you ordered with."
+msgstr "আপনার অর্ডার নম্বর অথবা যে ফোন নম্বর দিয়ে অর্ডার করেছেন সেটি দিন।"
+
+#: includes/class-rhot-lookup.php:90
+msgid "Please enter your order number."
+msgstr "আপনার অর্ডার নম্বর দিন।"
+
+#: includes/class-rhot-assets.php:72
+msgid "Please fill in the form before tracking."
+msgstr "ট্র্যাক করার আগে ফর্মটি পূরণ করুন।"
+
+#: includes/class-rhot-styles.php:262
+msgid "Plugin default"
+msgstr "প্লাগিনের ডিফল্ট"
+
+#: includes/class-rhot-tools.php:337
+msgid "Plugin version"
+msgstr "প্লাগিন সংস্করণ"
+
+#: includes/class-rhot-admin.php:512 widgets/class-rhot-track-widget.php:196
+msgid "Primary / button"
+msgstr "প্রধান / বাটন"
+
+#: includes/class-rhot-admin.php:372
+msgid "Privacy"
+msgstr "গোপনীয়তা"
+
+#: templates/preview.php:20 templates/preview.php:30
+msgid "Processing"
+msgstr "প্রক্রিয়াধীন"
+
+#: includes/class-rhot-admin.php:335
+msgid "Product images"
+msgstr "পণ্যের ছবি"
+
+#: includes/class-rhot-admin.php:334
+msgid "Product list"
+msgstr "পণ্যের তালিকা"
+
+#: includes/class-rhot-admin.php:333
+msgid "Products"
+msgstr "পণ্য"
+
+#: includes/class-rhot-admin.php:336
+msgid "Quantity"
+msgstr "পরিমাণ"
+
+#: includes/class-rhot-admin.php:41
+msgid "RH Order T"
+msgstr "RH Order T"
+
+#: includes/class-rhot-admin.php:40 includes/class-rhot-admin.php:119 includes/class-rhot-elementor.php:29
+msgid "RH Order Track"
+msgstr "RH Order Track"
+
+#: includes/class-rhot-compat.php:73
+msgid "RH Order Track needs WooCommerce to be installed and active. The tracking form stays hidden until then."
+msgstr "RH Order Track চালাতে WooCommerce ইনস্টল ও চালু থাকতে হবে। ততক্ষণ ট্র্যাকিং ফর্ম দেখাবে না।"
+
+#: includes/class-rhot-compat.php:61
+msgid "RH Order Track requires PHP %1$s or newer. This server is running PHP %2$s, so the plugin is inactive."
+msgstr "RH Order Track চালাতে PHP %1$s বা নতুন সংস্করণ দরকার। এই সার্ভারে PHP %2$s চলছে, তাই প্লাগিনটি নিষ্ক্রিয়।"
+
+#: includes/class-rhot-admin.php:226
+msgid "Rate limit window (seconds)"
+msgstr "সময়সীমা (সেকেন্ড)"
+
+#: includes/class-rhot-tools.php:313
+msgid "Rebuild index"
+msgstr "ইনডেক্স তৈরি করুন"
+
+#: includes/class-rhot-tools.php:293
+msgid "Rebuild phone index"
+msgstr "ফোন ইনডেক্স নতুন করে তৈরি"
+
+#: includes/class-rhot-admin.php:83
+msgid "Rebuild the phone index for all existing orders?"
+msgstr "সব পুরনো অর্ডারের ফোন ইনডেক্স নতুন করে তৈরি করবেন?"
+
+#: includes/class-rhot-admin.php:80
+msgid "Rebuilding…"
+msgstr "তৈরি হচ্ছে…"
+
+#: includes/class-rhot-admin.php:230
+msgid "Recommended. Turning this off makes phone lookups slower and less reliable."
+msgstr "সুপারিশকৃত। বন্ধ করলে ফোন দিয়ে খোঁজা ধীর ও কম নির্ভরযোগ্য হবে।"
+
+#: includes/class-rhot-admin.php:465
+msgid "Remove row"
+msgstr "রো মুছুন"
+
+#: includes/class-rhot-admin.php:84
+msgid "Remove this row?"
+msgstr "এই রো-টি মুছে ফেলবেন?"
+
+#: includes/class-rhot-admin.php:178
+msgid "Requiring both is strongly recommended. Order numbers are sequential, so with \"order number only\" anyone can read any order by typing 1, 2, 3…"
+msgstr "দুটোই বাধ্যতামূলক রাখা জোরালোভাবে সুপারিশ করা হয়। অর্ডার নম্বর ক্রমিক, তাই \"শুধু অর্ডার নম্বর\" রাখলে যে কেউ ১, ২, ৩ লিখে অন্যের অর্ডার দেখে ফেলতে পারবে।"
+
+#: includes/class-rhot-tools.php:393
+msgid "Reset"
+msgstr "রিসেট"
+
+#: includes/class-rhot-tools.php:398
+msgid "Reset all settings"
+msgstr "সব সেটিংস রিসেট করুন"
+
+#: includes/class-rhot-tools.php:395
+msgid "Reset every setting to its default? Order data is never touched."
+msgstr "সব সেটিংস ডিফল্টে ফিরিয়ে নেবেন? অর্ডারের কোনো তথ্য স্পর্শ করা হবে না।"
+
+#: includes/class-rhot-admin.php:338
+msgid "SKU"
+msgstr "এসকেইউ"
+
+#: templates/order-card.php:86
+msgid "SKU: %s"
+msgstr "এসকেইউ: %s"
+
+#: templates/preview.php:53
+msgid "Sample product"
+msgstr "নমুনা পণ্য"
+
+#: includes/class-rhot-admin.php:54
+msgid "Settings"
+msgstr "সেটিংস"
+
+#: includes/class-rhot-tools.php:220
+msgid "Settings imported."
+msgstr "সেটিংস ইমপোর্ট হয়েছে।"
+
+#: includes/class-rhot-tools.php:219
+msgid "Settings reset to their defaults."
+msgstr "সেটিংস ডিফল্টে ফিরিয়ে আনা হয়েছে।"
+
+#: widgets/class-rhot-track-widget.php:223
+msgid "Shape and spacing"
+msgstr "আকার ও ফাঁক"
+
+#: includes/class-rhot-formatter.php:242
+msgid "Shipping"
+msgstr "ডেলিভারি চার্জ"
+
+#: includes/class-rhot-admin.php:353 templates/order-card.php:169
+msgid "Shipping address"
+msgstr "ডেলিভারি ঠিকানা"
+
+#: includes/class-rhot-admin.php:344
+msgid "Shipping cost"
+msgstr "ডেলিভারি খরচ"
+
+#: includes/class-rhot-admin.php:331 includes/class-rhot-formatter.php:152
+msgid "Shipping method"
+msgstr "ডেলিভারি মাধ্যম"
+
+#: includes/class-rhot-tools.php:237
+msgid "Shortcode"
+msgstr "শর্টকোড"
+
+#: includes/class-rhot-admin.php:97
+msgid "Shortcode & tools"
+msgstr "শর্টকোড ও টুলস"
+
+#: includes/class-rhot-admin.php:367
+msgid "Show"
+msgstr "দেখাও"
+
+#: includes/class-rhot-admin.php:310
+msgid "Show a neutral message"
+msgstr "একটি সাধারণ বার্তা দেখাও"
+
+#: includes/class-rhot-admin.php:212
+msgid "Show an optional email field"
+msgstr "ঐচ্ছিক ইমেইল ফিল্ড দেখাও"
+
+#: includes/class-rhot-admin.php:394
+msgid "Show any extra value stored on the order — a courier consignment number, a delivery date, anything another plugin saves as order meta."
+msgstr "অর্ডারে জমা থাকা যেকোনো বাড়তি তথ্য দেখান — কুরিয়ারের কনসাইনমেন্ট নম্বর, ডেলিভারির তারিখ, বা অন্য কোনো প্লাগিনের সেভ করা অর্ডার মেটা।"
+
+#: includes/class-rhot-admin.php:204
+msgid "Show the order number field"
+msgstr "অর্ডার নম্বর ফিল্ড দেখাও"
+
+#: includes/class-rhot-admin.php:208
+msgid "Show the phone number field"
+msgstr "ফোন নম্বর ফিল্ড দেখাও"
+
+#: includes/class-rhot-admin.php:82 includes/class-rhot-assets.php:71
+msgid "Something went wrong. Please try again."
+msgstr "কিছু একটা সমস্যা হয়েছে। আবার চেষ্টা করুন।"
+
+#: widgets/class-rhot-track-widget.php:113
+msgid "Stacked"
+msgstr "উপর-নিচে"
+
+#: includes/class-rhot-admin.php:185
+msgid "Stacked (fields on separate lines)"
+msgstr "উপর-নিচে (প্রতিটি ফিল্ড আলাদা লাইনে)"
+
+#: includes/class-rhot-admin.php:250
+msgid "Status"
+msgstr "স্ট্যাটাস"
+
+#: includes/class-rhot-admin.php:327
+msgid "Status timeline"
+msgstr "স্ট্যাটাস টাইমলাইন"
+
+#: includes/class-rhot-admin.php:93
+msgid "Statuses"
+msgstr "স্ট্যাটাস"
+
+#: includes/class-rhot-admin.php:479
+msgid "SteadFast consignment ID"
+msgstr "SteadFast কনসাইনমেন্ট আইডি"
+
+#: includes/class-rhot-admin.php:480
+msgid "SteadFast delivery status"
+msgstr "SteadFast ডেলিভারি স্ট্যাটাস"
+
+#: includes/class-rhot-admin.php:253
+msgid "Step"
+msgstr "ধাপ"
+
+#: includes/class-rhot-admin.php:380
+msgid "Strongly recommended unless the customer must enter both the order number and the phone number."
+msgstr "কাস্টমারকে অর্ডার নম্বর ও ফোন — দুটোই দিতে না হলে এটি চালু রাখা জোরালোভাবে সুপারিশ করা হয়।"
+
+#: includes/class-rhot-admin.php:192 widgets/class-rhot-track-widget.php:82
+msgid "Sub-heading"
+msgstr "সাব-হেডিং"
+
+#: includes/class-rhot-admin.php:342 includes/class-rhot-formatter.php:228
+msgid "Subtotal"
+msgstr "সাবটোটাল"
+
+#: includes/class-rhot-admin.php:518
+msgid "Success"
+msgstr "সফল"
+
+#: includes/class-rhot-admin.php:326
+msgid "Summary"
+msgstr "সারসংক্ষেপ"
+
+#: includes/class-rhot-tools.php:326
+msgid "System status"
+msgstr "সিস্টেম স্ট্যাটাস"
+
+#: includes/class-rhot-admin.php:345 includes/class-rhot-formatter.php:249
+msgid "Tax"
+msgstr "ট্যাক্স"
+
+#: includes/class-rhot-tools.php:338
+msgid "Template overrides"
+msgstr "টেমপ্লেট ওভাররাইড"
+
+#: includes/class-rhot-admin.php:514 widgets/class-rhot-track-widget.php:198
+msgid "Text"
+msgstr "লেখা"
+
+#: includes/class-rhot-tools.php:221
+msgid "That did not look like valid settings JSON. Nothing was changed."
+msgstr "এটি বৈধ সেটিংস JSON মনে হয়নি। কিছুই বদলানো হয়নি।"
+
+#: includes/class-rhot-admin.php:226
+msgid "The counter clears after this long with no attempts. 900 = 15 minutes."
+msgstr "এতক্ষণ কোনো চেষ্টা না হলে গণনা শূন্য হয়ে যাবে। ৯০০ = ১৫ মিনিট।"
+
+#: includes/class-rhot-admin.php:210 includes/class-rhot-shortcode.php:158
+msgid "The number you ordered with"
+msgstr "যে নম্বর দিয়ে অর্ডার করেছেন"
+
+#: includes/class-rhot-styles.php:255
+msgid "Theme palette (theme.json)"
+msgstr "থিম প্যালেট (theme.json)"
+
+#: includes/class-rhot-ajax.php:48
+msgid "Too many attempts. Please wait a few minutes and try again."
+msgstr "অনেকবার চেষ্টা করা হয়েছে। কয়েক মিনিট পর আবার চেষ্টা করুন।"
+
+#: includes/class-rhot-formatter.php:256 templates/preview.php:64
+msgid "Total"
+msgstr "সর্বমোট"
+
+#: includes/class-rhot-admin.php:341
+msgid "Totals"
+msgstr "হিসাব"
+
+#: includes/class-rhot-admin.php:228
+msgid "Track from a link"
+msgstr "লিংক থেকে ট্র্যাক"
+
+#: includes/class-rhot-admin.php:193 includes/class-rhot-shortcode.php:115
+msgid "Track order"
+msgstr "অর্ডার ট্র্যাক করুন"
+
+#: includes/class-rhot-admin.php:191
+msgid "Track your order"
+msgstr "আপনার অর্ডার ট্র্যাক করুন"
+
+#: includes/class-rhot-admin.php:452
+msgid "Tracking number"
+msgstr "ট্র্যাকিং নম্বর"
+
+#: includes/class-rhot-admin.php:311
+msgid "Treat it as not found"
+msgstr "\"পাওয়া যায়নি\" হিসেবে ধরো"
+
+#: includes/class-rhot-admin.php:545
+msgid "Turn off only if you are styling the form entirely yourself."
+msgstr "পুরো ফর্মটি নিজে স্টাইল করলে তবেই বন্ধ করুন।"
+
+#: widgets/class-rhot-track-widget.php:96 widgets/class-rhot-track-widget.php:112
+msgid "Use global setting"
+msgstr "গ্লোবাল সেটিংস ব্যবহার করো"
+
+#: includes/class-rhot-admin.php:501
+msgid "Use my own colours below"
+msgstr "নিচের নিজের রঙ ব্যবহার করো"
+
+#: includes/class-rhot-tools.php:238
+msgid "Use this on any page or widget. On Elementor sites you can use the \"Order Tracking\" widget instead — both render exactly the same form."
+msgstr "যেকোনো পেজ বা উইজেটে ব্যবহার করুন। Elementor সাইটে \"Order Tracking\" উইজেটও ব্যবহার করতে পারেন — দুটোই হুবহু একই ফর্ম দেখাবে।"
+
+#: includes/class-rhot-admin.php:228
+msgid "Useful for \"track your order\" links in SMS messages and emails."
+msgstr "এসএমএস ও ইমেইলে \"অর্ডার ট্র্যাক করুন\" লিংক পাঠানোর জন্য কাজে লাগে।"
+
+#: includes/class-rhot-admin.php:339
+msgid "Variation / item meta"
+msgstr "ভ্যারিয়েশন / আইটেম মেটা"
+
+#: includes/class-rhot-admin.php:251
+msgid "Visible"
+msgstr "দেখাবে"
+
+#: includes/class-rhot-lookup.php:293
+msgid "We could not find an order matching those details. Please check them and try again."
+msgstr "এই তথ্য দিয়ে কোনো অর্ডার খুঁজে পাওয়া যায়নি। তথ্যগুলো মিলিয়ে আবার চেষ্টা করুন।"
+
+#: widgets/class-rhot-track-widget.php:92
+msgid "What the customer enters"
+msgstr "কাস্টমার যা দেবে"
+
+#: includes/class-rhot-admin.php:170
+msgid "What the customer must enter"
+msgstr "কাস্টমারকে যা দিতে হবে"
+
+#: includes/class-rhot-admin.php:308
+msgid "When an order is in a hidden status"
+msgstr "অর্ডার লুকানো স্ট্যাটাসে থাকলে"
+
+#: includes/class-rhot-tools.php:59
+msgid "WooCommerce is not active."
+msgstr "WooCommerce চালু নেই।"
+
+#: includes/class-rhot-tools.php:332
+msgid "WooCommerce version"
+msgstr "WooCommerce সংস্করণ"
+
+#: includes/class-rhot-tools.php:55 includes/class-rhot-tools.php:153 includes/class-rhot-tools.php:165
+msgid "You do not have permission to do that."
+msgstr "এটি করার অনুমতি আপনার নেই।"
+
+#: templates/order-card.php:178
+msgid "Your note"
+msgstr "আপনার নোট"
+
+#: includes/class-rhot-admin.php:316
+msgid "Your order is being processed."
+msgstr "আপনার অর্ডারটি প্রক্রিয়াধীন আছে।"
+
+#: includes/class-rhot-lookup.php:280
+msgid "Your order is being processed. Please check back a little later."
+msgstr "আপনার অর্ডারটি প্রক্রিয়াধীন আছে। একটু পরে আবার দেখুন।"
+
+#: includes/class-rhot-ajax.php:57
+msgid "Your session expired. Please try again."
+msgstr "সেশনের মেয়াদ শেষ হয়েছে। আবার চেষ্টা করুন।"
+
+#: includes/class-rhot-admin.php:206 includes/class-rhot-shortcode.php:146
+msgid "e.g. 1042"
+msgstr "যেমন ১০৪২"
+

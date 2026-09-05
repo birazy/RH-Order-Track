@@ -1,0 +1,15 @@
+# Files excluded from a distributable build (wp-cli dist-archive and friends).
+.git
+.github
+.gitignore
+.gitattributes
+.distignore
+.editorconfig
+.vscode
+.idea
+node_modules
+vendor
+tests
+*.zip
+*.log
+README.md

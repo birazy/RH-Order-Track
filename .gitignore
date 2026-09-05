@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*~
+*.swp
+
+# Build output / release archives
+/dist/
+/build/
+*.zip
+
+# Dependencies (none today, but keep them out if they ever appear)
+/node_modules/
+/vendor/
+composer.lock
+package-lock.json
+
+# Logs and local scratch
+*.log
+debug.log
+/tmp/
+
+# WordPress internals, in case the plugin folder is ever opened as a workspace
+wp-config.php
