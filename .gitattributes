@@ -13,3 +13,12 @@
 
 # Report .po files as Gettext rather than skewing the language stats.
 *.po linguist-language=Gettext
+
+# Excluded from `git archive`, i.e. from the installable release zip and from
+# GitHub's own "Source code" downloads. These are repository plumbing; a site
+# owner installing the plugin has no use for them.
+.gitattributes  export-ignore
+.gitignore      export-ignore
+.distignore     export-ignore
+.editorconfig   export-ignore
+.github/        export-ignore
